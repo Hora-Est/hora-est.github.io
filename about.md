@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This page was made with Jekyll and the Minima theme.
+This site was made with Jekyll and the Minima theme.
 
 You can find the source code for Minima at GitHub:
 [jekyll][jekyll-organization] /

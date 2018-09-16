@@ -23,4 +23,4 @@ Hora Est
 
 P.s. If you have just recently joined as a PhD candidate, would also kindly request you to register yourself as a Hora-Est member by sending us a mail at horaest@tue.nl , this will make future communications much more simpler. Thank You.
 
-[tikkie-link]: https://tikkie.me/pay/lb5lqrrms8sjjusaahfh
+[tikkie-link]: https://tikkie.me/pay/h1s9ml4i7bvaaa3q1fnk

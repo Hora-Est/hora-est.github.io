@@ -1,4 +1,13 @@
-## Welcome to GitHub Pages
+# The web site of Hora Est
+
+## Local hosting
+
+To test the website, execute
+```powershell
+bundle exec jekyll serve
+```
+
+## GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Hora-Est/hora-est.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 

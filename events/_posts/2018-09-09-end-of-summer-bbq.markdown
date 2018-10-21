@@ -14,6 +14,10 @@ P.s. If you have just recently joined as a PhD candidate, would also kindly requ
 
 # Details
 
+## Date/time
+
+Friday the 14th of September from 17:30 to 22:00.
+
 ## Location
 
 In front of the Gemini-Zuid building.

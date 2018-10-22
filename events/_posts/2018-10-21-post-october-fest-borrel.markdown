@@ -1,6 +1,6 @@
 ---
 layout: events
-title:  "Post-𝖔𝖈𝖙𝖔𝖇𝖊𝖗𝖋𝖊𝖘𝖙 borrel"
+title:  "Post-octoberfest borrel"
 date:   2018-10-21 22:50:00 +0200
 categories: event social borrel
 ---

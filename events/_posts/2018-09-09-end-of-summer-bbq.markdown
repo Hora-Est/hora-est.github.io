@@ -1,8 +1,11 @@
 ---
 layout: events
 title:  "End of Summer BBQ"
-date:   2018-09-09 20:28:28 +0200
-categories: event social
+published: 2018-09-09 20:28:28 +0200
+begindate: 2018-09-14 17:30 +0200
+enddate: 2018-09-14 21:30 +0200
+location: In front of the Gemini-Zuid building, at the so-called "Flux field"
+tags: [bbq, beermeeting]
 ---
 From this month onwards, the students will be beginning a New Academic year and this gives another opportunity to celebrate and have some fun. Hence, we have plan on spoiling ourselves with probably the two most important components for sustaining human civilization; **Barbeque** and **Beer**. We'll be firing up the grill during the evening time on **Friday the 14th of September**. We cordially invite everyone to join us, partners are also welcome.
 
@@ -14,17 +17,9 @@ P.s. If you have just recently joined as a PhD candidate, would also kindly requ
 
 # Details
 
-## Date/time
-
-Friday the 14th of September from 17:30 to 22:00.
-
-## Location
-
-In front of the Gemini-Zuid building.
-
 ## Registration
 
-To register yourself for the event, we ask you a fee of €5 per person. If you prefer a vegetarian/vegan BBQ, you can send a mail to horaest@tue.nl and give us your preferences.
+To register yourself for the event, we ask you a fee of €5 per person. If you prefer a vegetarian or vegan BBQ meal, you can send an e-mail to horaest@tue.nl with your preferences.
 
 ## Payment
 

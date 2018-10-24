@@ -33,6 +33,7 @@ markdown: kramdown
 theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+port: 8888
 
 page:
   author:

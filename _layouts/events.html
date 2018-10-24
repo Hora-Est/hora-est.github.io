@@ -73,7 +73,7 @@
     {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
     {% capture begindate %}{{post.begindate | date: '%s'}}{% endcapture %}
     {% if begindate > nowunix %}
-      <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}&nbsp;&nbsp;{{ post.published | date_to_string }}</a></li>
+      <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}&nbsp;&nbsp;{{ post.begindate | date_to_string }}</a></li>
     {% endif %}
     {% endfor %}
     </ul>

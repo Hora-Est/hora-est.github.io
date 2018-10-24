@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 ---
 # About
+
 {{site.description}}
 
 This site was made with Jekyll and the Minima theme and was inspired by [www.bonvinlab.org](http://www.bonvinlab.org/).

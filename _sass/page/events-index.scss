@@ -1,0 +1,9 @@
+%lighten-text {
+	color: lighten($basecolor, 65%);
+}
+.past-events {
+	@extend %lighten-text;
+	a{
+		@extend %lighten-text;
+	}
+}

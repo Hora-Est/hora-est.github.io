@@ -33,6 +33,7 @@
 </div>
 
 <div id="index">
+  <div class="upcoming-events">
     <h1>Upcoming events</h1>
     {% for post in site.posts %}
       {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
@@ -61,6 +62,8 @@
       </article>
       {% endif %}
     {% endfor %}
+  </div>
+  <div class="past-events">
     <h1>Past events</h1>
     {% for post in site.posts %}
       {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
@@ -89,6 +92,7 @@
       </article>
       {% endif %}
     {% endfor %}
+  </div>
 </div><!-- /#index -->
 
 <div class="footer-wrap">

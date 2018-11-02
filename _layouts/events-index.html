@@ -36,15 +36,15 @@
     <h1>Upcoming events</h1>
     {% for post in site.posts %}
       {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-      {% capture begindate %}{{post.begindate | date: '%s'}}{% endcapture %}
-      {% if begindate > nowunix %}
+      {% capture begindatetime %}{{post.begindatetime | date: '%s'}}{% endcapture %}
+      {% if begindatetime > nowunix %}
       {% if post.next == nil %}
-          <h3>{{ post.begindate | date: '%B %Y' }}</h3>
+          <h3>{{ post.begindatetime | date: '%B %Y' }}</h3>
       {% else %}
-          {% capture month %}{{ post.begindate | date: '%B' }}{% endcapture %}
-          {% capture nmonth %}{{ post.next.begindate | date: '%B' }}{% endcapture %}
+          {% capture month %}{{ post.begindatetime | date: '%B' }}{% endcapture %}
+          {% capture nmonth %}{{ post.next.begindatetime | date: '%B' }}{% endcapture %}
           {% if month != nmonth %}
-              <h3>{{ post.begindate | date: '%B %Y' }}</h3>
+              <h3>{{ post.begindatetime | date: '%B %Y' }}</h3>
           {% endif %}
       {% endif %}
       <article>
@@ -53,7 +53,7 @@
           {% else %}
             <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
             <p>
-              <em>{{ post.begindate | date: "%A %B %d, %Y"}} {{ post.begindate | date: "%H:%M"}} - {{ post.enddate | date: "%H:%M"}}</em>
+              <em>{{ post.begindatetime | date: "%A %B %d, %Y"}} {{ post.begindatetime | date: "%H:%M"}} - {{ post.enddatetime | date: "%H:%M"}}</em>
             <br>
               {{ post.excerpt | strip_html | truncate: 160 }}
             </p>
@@ -64,15 +64,15 @@
     <h1>Past events</h1>
     {% for post in site.posts %}
       {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-      {% capture begindate %}{{post.begindate | date: '%s'}}{% endcapture %}
-      {% if begindate < nowunix %}
+      {% capture begindatetime %}{{post.begindatetime | date: '%s'}}{% endcapture %}
+      {% if begindatetime < nowunix %}
       {% if post.next == nil %}
-          <h3>{{ post.begindate | date: '%B %Y' }}</h3>
+          <h3>{{ post.begindatetime | date: '%B %Y' }}</h3>
       {% else %}
-          {% capture month %}{{ post.begindate | date: '%B' }}{% endcapture %}
-          {% capture nmonth %}{{ post.next.begindate | date: '%B' }}{% endcapture %}
+          {% capture month %}{{ post.begindatetime | date: '%B' }}{% endcapture %}
+          {% capture nmonth %}{{ post.next.begindatetime | date: '%B' }}{% endcapture %}
           {% if month != nmonth %}
-              <h3>{{ post.begindate | date: '%B %Y' }}</h3>
+              <h3>{{ post.begindatetime | date: '%B %Y' }}</h3>
           {% endif %}
       {% endif %}
       <article>
@@ -81,7 +81,7 @@
           {% else %}
             <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
             <p>
-              <em>{{ post.begindate | date: "%A %B %d, %Y"}} {{ post.begindate | date: "%H:%M"}} - {{ post.enddate | date: "%H:%M"}}</em>
+              <em>{{ post.begindatetime | date: "%A %B %d, %Y"}} {{ post.begindatetime | date: "%H:%M"}} - {{ post.enddatetime | date: "%H:%M"}}</em>
             <br>
               {{ post.excerpt | strip_html | truncate: 160 }}
             </p>

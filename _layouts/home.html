@@ -45,7 +45,7 @@
     {% else %}
       <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
       <p>
-        <em>{{ post.begindate | date: "%A %B %d, %Y"}} {{ post.begindate | date: "%H:%M"}} - {{ post.enddate | date: "%H:%M"}}</em>
+        <em>{{ post.begindatetime | date: "%A %B %d, %Y"}} {{ post.begindatetime | date: "%H:%M"}} - {{ post.enddatetime | date: "%H:%M"}}</em>
       <br>
         {{ post.excerpt | strip_html | truncate: 160 }}
       </p>

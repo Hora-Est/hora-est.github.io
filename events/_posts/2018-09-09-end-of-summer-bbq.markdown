@@ -2,8 +2,8 @@
 layout: events
 title:  "End of Summer BBQ"
 published: 2018-09-09 20:28:28 +0200
-begindate: 2018-09-14 17:30 +0200
-enddate: 2018-09-14 21:30 +0200
+begindatetime: 2018-09-14 17:30 +0200
+enddatetime: 2018-09-14 21:30 +0200
 location: In front of the Gemini-Zuid building, at the so-called "Flux field"
 tags: [bbq, beermeeting]
 ---

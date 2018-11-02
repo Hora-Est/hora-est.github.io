@@ -2,8 +2,8 @@
 layout: events
 title:  "Post-octoberfest borrel"
 published: 2018-10-21 22:50:00 +0200
-begindate: 2018-10-26 17:30 +0200
-enddate: 2018-10-26 21:00 +0200
+begindatetime: 2018-10-26 17:30 +0200
+enddatetime: 2018-10-26 21:00 +0200
 location: Gemini-Zuid, ground floor, at the front of room 0.143 (the coffee corner of the Dynamics and Control department)
 tags: [beermeeting]
 ---

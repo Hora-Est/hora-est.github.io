@@ -2,8 +2,8 @@
 layout: events
 title:  "Amazing Christmas market bus-trip to beautiful Cologne"
 published: 2018-10-30 18:35:00 +0200
-begindate: 2018-12-08 14:00 +0200
-enddate: 2018-12-08 23:30 +0200
+begindatetime: 2018-12-08 14:00 +0200
+enddatetime: 2018-12-08 23:30 +0200
 location: Assemble at the Gemini-Zuid/MetaForum bicycle stands
 tags: [citytrip, trip, abroad]
 ---

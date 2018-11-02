@@ -2,8 +2,8 @@
 layout: events
 title:  "PhD bowling event"
 published: 2018-11-17 16:27:00 +0200
-begindate: 2018-11-17 17:30 +0200
-enddate: 2018-11-17 19:30 +0200
+begindatetime: 2018-11-17 17:30 +0200
+enddatetime: 2018-11-17 19:30 +0200
 location: Mega Bowling Woensel, Vijfkamplaan 6-A, Eindhoven
 tags: [beermeeting, contest, social]
 ---

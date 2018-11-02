@@ -42,9 +42,9 @@
         <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
       {% endif %}
       <p class="event-details">
-        <b>Date</b>: {{ page.begindate | date: "%A %B %d, %Y"}}
+        <b>Date</b>: {{ page.begindatetime | date: "%A %B %d, %Y"}}
       <br>
-        <b>Time</b>: {{ page.begindate | date: "%H:%M"}} - {{ page.enddate | date: "%H:%M"}}
+        <b>Time</b>: {{ page.begindatetime | date: "%H:%M"}} - {{ page.enddatetime | date: "%H:%M"}}
       <br>
         <b>Location</b>: {{ page.location }}
       </p>
@@ -71,9 +71,9 @@
     <ul>
     {% for post in site.posts %}
     {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-    {% capture begindate %}{{post.begindate | date: '%s'}}{% endcapture %}
-    {% if begindate > nowunix %}
-      <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}&nbsp;&nbsp;{{ post.begindate | date_to_string }}</a></li>
+    {% capture begindatetime %}{{post.begindatetime | date: '%s'}}{% endcapture %}
+    {% if begindatetime > nowunix %}
+      <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}&nbsp;&nbsp;{{ post.begindatetime | date_to_string }}</a></li>
     {% endif %}
     {% endfor %}
     </ul>

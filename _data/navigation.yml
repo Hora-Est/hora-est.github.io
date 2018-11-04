@@ -6,7 +6,12 @@
 - title: Events
   url: /events/
 
-# - title: Photos
+- title: Board
+  url: /Board/
+# TODO: Former Board
+
+# TODO: Photos
+#- title: Photos
 #   url: /photos/
 
 # - title: Sponsors

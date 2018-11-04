@@ -1,10 +1,3 @@
--   name: Boris Breuer
-    position: Website/Facebook administrator
-    department: Biomedical Engineering
-    group: Computational Biology
-    url: https://www.tue.nl/universiteit/faculteiten/biomedische-technologie/de-faculteit/medewerkers/detail/ep/e/d/ep-uid/20171414/
-    avatar: /image/people/Boris Breuer 2018 Q1.jpg
-
 -   name: James Muganda
     position: Chairman
     department: Mechanical Engineering
@@ -19,6 +12,13 @@
     url: https://www.tue.nl/universiteit/faculteiten/werktuigbouwkunde/de-faculteit/medewerkers/detail/ep/e/d/ep-uid/20170085/
     avatar: /image/people/Shravan Kottapalli.jpg
 
+-   name: Varun Shah
+    position: Treasurer
+    department: Mechanical Engineering
+    group: Mechanics of Materials
+    url: https://www.tue.nl/universiteit/faculteiten/werktuigbouwkunde/de-faculteit/medewerkers/detail/ep/e/d/ep-uid/20167868/
+    avatar: /image/people/Varun Shah.jpg
+
 -   name: Veronica Mazulina
     position: Activities comissioner
     department: Mechanical Engineering
@@ -26,9 +26,9 @@
     url: https://www.tue.nl/universiteit/faculteiten/werktuigbouwkunde/de-faculteit/medewerkers/detail/ep/e/d/ep-uid/20175647/
     avatar: /image/people/Veronika Mazulina.jpg
 
--   name: Varun Shah
-    position: Treasurer
-    department: Mechanical Engineering
-    group: Mechanics of Materials
-    url: https://www.tue.nl/universiteit/faculteiten/werktuigbouwkunde/de-faculteit/medewerkers/detail/ep/e/d/ep-uid/20167868/
-    avatar: /image/people/Varun Shah.jpg
+-   name: Boris Breuer
+    position: Website/Facebook administrator
+    department: Biomedical Engineering
+    group: Computational Biology
+    url: https://www.tue.nl/universiteit/faculteiten/biomedische-technologie/de-faculteit/medewerkers/detail/ep/e/d/ep-uid/20171414/
+    avatar: /image/people/Boris Breuer 2018 Q1.jpg

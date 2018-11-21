@@ -46,4 +46,4 @@ The transportation (bus) for the trip is free, and will be arranged by Hora Est.
 Please use [this tikkie link][tikkie-link] to do the payment(s).
 
 [cologne-info-link]:https://www.cologne.de/events/christmas-markets
-[tikkie-link]: https://tikkie.me/pay/fo805qn91pgm4d20orr4
+[tikkie-link]: https://tikkie.me/pay/hcp6vu9dmjksflqj1ahm

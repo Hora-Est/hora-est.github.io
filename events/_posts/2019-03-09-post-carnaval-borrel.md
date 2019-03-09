@@ -7,7 +7,7 @@ enddatetime: 2019-03-22 21:00 +0200
 location: Gemini-Zuid, ground floor, at the front of room 0.143 (the coffee corner of the Dynamics and Control department)
 tags: [beermeeting]
 ---
-![You miss shots you dont take](../../image/event/you_miss_shots_you_dont_take.jpg)
+![You miss shots you dont take](image/event/you_miss_shots_you_dont_take.jpg)
 
 Greetings fellow PhD candidates,
 

@@ -8,7 +8,7 @@
 			"type": "shell",
 			"command": "bundle exec jekyll serve --livereload",
 			"group": {
-				"kind": "test",
+				"kind": "build",
 				"isDefault": true
 			},
 			"isBackground": true,
@@ -22,7 +22,7 @@
 			"type": "shell",
 			"command": "bundle exec jekyll build",
 			"group": {
-				"kind": "build",
+				"kind": "test",
 				"isDefault": true
 			},
 			"isBackground": true,

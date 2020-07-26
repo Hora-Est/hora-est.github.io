@@ -1,6 +1,10 @@
 #index {
 	&.album {
 		overflow: inherit;
+
+		.event-date {
+			color: gray;
+		}
 	}
 }
 

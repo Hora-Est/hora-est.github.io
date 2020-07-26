@@ -2,7 +2,8 @@
 tags: []
 ---
 <div itemscope itemtype="http://schema.org/Photograph">
-  <h1>{{site.data.Cloudinary['2010']['04-16_balloon_workshop'].long_name}}</h1>
+  <h1>{{site.data.Cloudinary['2010']['04-16_balloon_workshop'].short_name}}</h1>
+  <h2 class="event-date">{{site.data.Cloudinary['2010']['04-16_balloon_workshop'].date}}</h2>
   {% for url in site.data.Cloudinary['2010']['04-16_balloon_workshop'].urls %}
     <a itemprop="image" class="swipebox" title="" href="{{ site.cloudinary.baseurl }}/{{ url }}">
       <img alt="" itemprop="thumbnailUrl" src="{{ site.cloudinary.baseurl }}/h_150/{{ url }}" />

@@ -6,10 +6,7 @@
 			"label": "Serve",
 			"type": "shell",
 			"command": "bundle exec jekyll serve --livereload",
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
+			"group": "build",
 			"isBackground": true,
 			"problemMatcher": [
 				"$jekyll-error-watch",
@@ -20,10 +17,7 @@
 			"label": "Build",
 			"type": "shell",
 			"command": "bundle exec jekyll build",
-			"group": {
-				"kind": "test",
-				"isDefault": true
-			},
+			"group":"build",
 			"isBackground": true,
 			"problemMatcher": [
 				"$jekyll-error-watch",
@@ -31,15 +25,13 @@
 			]
 		},
 		{
+			"label": "TypeScript watch",
 			"type": "typescript",
 			"tsconfig": "tsconfig.json",
 			"problemMatcher": [
 				"$tsc"
 			],
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
+			"group": "build",
 			"isBackground": true
 		}
 	]

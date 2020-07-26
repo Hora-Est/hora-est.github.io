@@ -8,6 +8,8 @@ To test the website, execute
 bundle exec jekyll serve
 ```
 
+or in vscode press `ctrl+shift+b` and select `build` or `serve`.
+
 For more information visit https://jekyllrb.com/
 
 ## GitHub Pages

@@ -36,72 +36,71 @@
   <div class="upcoming-events">
     <h1>Upcoming events</h1>
     {% for post in site.posts %}
-      {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-      {% capture begindatetime %}{{post.begindatetime | date: '%s'}}{% endcapture %}
-      {% if begindatetime > nowunix %}
-      {% if post.next == nil %}
-          <h3>{{ post.begindatetime | date: '%B %Y' }}</h3>
-      {% else %}
-          {% capture month %}{{ post.begindatetime | date: '%B' }}{% endcapture %}
-          {% capture nmonth %}{{ post.next.begindatetime | date: '%B' }}{% endcapture %}
-          {% if month != nmonth %}
-              <h3>{{ post.begindatetime | date: '%B %Y' }}</h3>
-          {% endif %}
-      {% endif %}
-      <article>
-          {% if post.link %}
-              <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>
-          {% else %}
-            <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-            <p>
-              <em>{{ post.begindatetime | date: "%A %B %d, %Y"}} {{ post.begindatetime | date: "%H:%M"}} - {{ post.enddatetime | date: "%H:%M"}}</em>
-            <br>
-              {{ post.excerpt | strip_html | truncate: 160 }}
-            </p>
-          {% endif %}
-      </article>
+      {% if post.layout == 'events' %}
+        {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+        {% capture begindatetime %}{{post.begindatetime | date: '%s'}}{% endcapture %}
+        {% if begindatetime > nowunix %}
+        {% if post.next == nil %}
+            <h3>{{ post.begindatetime | date: '%B %Y' }}</h3>
+        {% else %}
+            {% capture month %}{{ post.begindatetime | date: '%B' }}{% endcapture %}
+            {% capture nmonth %}{{ post.next.begindatetime | date: '%B' }}{% endcapture %}
+            {% if month != nmonth %}
+                <h3>{{ post.begindatetime | date: '%B %Y' }}</h3>
+            {% endif %}
+        {% endif %}
+        <article>
+            {% if post.link %}
+                <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>
+            {% else %}
+              <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+              <p>
+                <em>{{ post.begindatetime | date: "%A %B %d, %Y"}} {{ post.begindatetime | date: "%H:%M"}} - {{ post.enddatetime | date: "%H:%M"}}</em>
+              <br>
+                {{ post.excerpt | strip_html | truncate: 160 }}
+              </p>
+            {% endif %}
+        </article>
+        {% endif %}
       {% endif %}
     {% endfor %}
   </div>
   <div class="past-events">
     <h1>Past events</h1>
     {% for post in site.posts %}
-      {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-      {% capture begindatetime %}{{post.begindatetime | date: '%s'}}{% endcapture %}
-      {% if begindatetime < nowunix %}
-      {% if post.next == nil %}
-          <h3>{{ post.begindatetime | date: '%B %Y' }}</h3>
-      {% else %}
-          {% capture month %}{{ post.begindatetime | date: '%B' }}{% endcapture %}
-          {% capture nmonth %}{{ post.next.begindatetime | date: '%B' }}{% endcapture %}
-          {% if month != nmonth %}
-              <h3>{{ post.begindatetime | date: '%B %Y' }}</h3>
-          {% endif %}
-      {% endif %}
-      <article>
-          {% if post.link %}
-              <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>
-          {% else %}
-            <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-            <p>
-              <em>{{ post.begindatetime | date: "%A %B %d, %Y"}} {{ post.begindatetime | date: "%H:%M"}} - {{ post.enddatetime | date: "%H:%M"}}</em>
-            <br>
-              {{ post.excerpt | strip_html | truncate: 160 }}
-            </p>
-          {% endif %}
-      </article>
+      {% if post.layout == 'events' %}
+        {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+        {% capture begindatetime %}{{post.begindatetime | date: '%s'}}{% endcapture %}
+        {% if begindatetime < nowunix %}
+        {% if post.next == nil %}
+            <h3>{{ post.begindatetime | date: '%B %Y' }}</h3>
+        {% else %}
+            {% capture month %}{{ post.begindatetime | date: '%B' }}{% endcapture %}
+            {% capture nmonth %}{{ post.next.begindatetime | date: '%B' }}{% endcapture %}
+            {% if month != nmonth %}
+                <h3>{{ post.begindatetime | date: '%B %Y' }}</h3>
+            {% endif %}
+        {% endif %}
+        <article>
+            {% if post.link %}
+                <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></h2>
+            {% else %}
+              <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+              <p>
+                <em>{{ post.begindatetime | date: "%A %B %d, %Y"}} {{ post.begindatetime | date: "%H:%M"}} - {{ post.enddatetime | date: "%H:%M"}}</em>
+              <br>
+                {{ post.excerpt | strip_html | truncate: 160 }}
+              </p>
+            {% endif %}
+        </article>
+        {% endif %}
       {% endif %}
     {% endfor %}
   </div>
 </div><!-- /#index -->
 
-<div class="footer-wrap">
-  <footer>
-    {% include _footer.html %}
-  </footer>
-</div><!-- /.footer-wrap -->
+{% include _footer.html %}
 
 {% include _scripts.html %}
-  
 </body>
 </html>

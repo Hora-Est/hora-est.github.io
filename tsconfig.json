@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"module": "esnext",
+		"types": [],
+		"sourceMap": true,
+		"target": "esnext"
+	},
+	"include": [
+		"assets/ts/**/*",
+	],
+	"atom": {
+		"rewriteTsconfig": true
+	},
+	"plugins": [{
+		"name": "tslint-language-service",
+		"alwaysShowRuleFailuresAsWarnings": true,
+		"ignoreDefinitionFiles": false,
+		"disableNoUnusedVariableRule": false
+	}]
+}

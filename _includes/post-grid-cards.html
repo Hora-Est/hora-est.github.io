@@ -1,0 +1,8 @@
+<div class="album">
+  <img src="{{ site.cloudinary.baseurl }}/w_300/{{ album_thumbnail }}" alt="teaser" itemprop="image">
+  <h3 class="post-title" itemprop="name">
+    <span><a href="{{ site.url }}/gallery{{album_date | date: '/%Y/%m/%d/'}}{{ album_link }}">{{ album_name }}</a></span>
+    <br>
+    <span><time datetime="{{ album_date | date: '%Y-%m-%d'}}" itemprop="datePublished">{{ album_date | date: "%B %d, %Y" }}</time></span>
+  </h3>
+</div>

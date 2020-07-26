@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	{% include _head.html %}
+	<link rel="stylesheet" href="{{site.url}}/assets/css/justifiedGallery.min.css">
+</head>
+
+<body id="js-body">
+	{% include _browser-upgrade.html %}
+	{% include _navigation.html %}
+	<div class="article-author-side">
+		{% include _author-bio.html %}
+	</div>
+	<!-- Use CSS to set the width etc. of the gallery -->
+	<div id="index" role="main" class="album">
+		<h1>{{ post.name }}</h1>
+		{{ content }}
+		{% include _footer.html %}
+		{% include _scripts.html %}
+	</div><!-- /#main -->
+</body>
+
+</html>

@@ -22,7 +22,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   Our aim is to support PhD students during their work by organizing social activities like drinks and dinners as well as activities with a more scientific edge such as workshops, excursions and readings.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
+cloudinary:
+  baseurl: https://res.cloudinary.com/horaest/image/upload
+twitter_username:
 github_username: Hora-Est
 facebook_username: eindhovenhoraest
 repository: Hora-Est/hora-est.github.io
@@ -33,6 +35,7 @@ markdown: kramdown
 #theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+
 port: 8888
 
 page:
@@ -53,6 +56,16 @@ owner:
     ad-client:
     ad-slot:
   github: Hora-Est
+
+defaults:
+-
+    scope:
+      path: "gallery" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: photo-gallery/album
+      share: true
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

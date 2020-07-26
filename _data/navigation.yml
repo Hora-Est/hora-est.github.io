@@ -10,9 +10,8 @@
   url: /board/
 # TODO: Former Board
 
-# TODO: Photos
-#- title: Photos
-#   url: /photos/
+- title: Gallery
+  url: /gallery/
 
 # - title: Sponsors
 #   url: /sponsors/

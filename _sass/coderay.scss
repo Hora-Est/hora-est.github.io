@@ -11,7 +11,6 @@
   }
 }
 
-div.CodeRay { }
 span.CodeRay { white-space: pre; border: 0px; padding: 2px }
 
 table.CodeRay { border-collapse: collapse; width: 100%; padding: 2px }
@@ -83,7 +82,6 @@ ol.CodeRay li { white-space: pre }
 .CodeRay .label { color:#970; font-weight:bold }
 .CodeRay .local-variable { color:#963 }
 .CodeRay .octal { color:#40E; font-weight:bold }
-.CodeRay .operator { }
 .CodeRay .predefined-constant {  font-weight:bold }
 .CodeRay .predefined { color:#369; font-weight:bold }
 .CodeRay .preprocessor { color:#579; }
@@ -103,14 +101,12 @@ ol.CodeRay li { white-space: pre }
 .CodeRay .regexp .function  { color:#404; font-weight: bold }
 
 .CodeRay .string { color: #D20; }
-.CodeRay .string .string { }
 .CodeRay .string .string .string { background-color:#ffd0d0 }
 .CodeRay .string .content { color: #D14; }
 .CodeRay .string .char { color: #D14; }
 .CodeRay .string .delimiter { color: #D14; }
 
 .CodeRay .shell { color:#D14 }
-.CodeRay .shell .content { }
 .CodeRay .shell .delimiter { color:#D14 }
 
 .CodeRay .symbol { color:#990073 }

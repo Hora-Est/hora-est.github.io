@@ -1,7 +1,6 @@
 ---
 sitemap: false
 ---
-
 /*
  *
  *  Minimal Mistakes
@@ -11,7 +10,10 @@ sitemap: false
  *
 */
 
+
+
 // Partials
+@import "user-agent";
 @import "variables";
 @import "grid";
 @import "mixins";
@@ -28,4 +30,6 @@ sitemap: false
 //@import "vendor/google/fonts";
 
 @import "people";
-@import "page/events-index"
+@import "page/events-index";
+@import "page/album";
+@import "page/gallery-index";

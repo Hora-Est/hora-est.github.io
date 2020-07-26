@@ -1,0 +1,2 @@
+cloudinary:
+  baseurl: https://res.cloudinary.com/horaest/image/upload/

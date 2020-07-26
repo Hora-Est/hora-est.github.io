@@ -1,0 +1,13 @@
+#index {
+	display: flex;
+	flex-direction: column;
+	.year{
+		.album {
+			h3 {
+				padding: none;
+				font-size: initial;
+				border-bottom: none;
+			}
+		}
+	}
+}

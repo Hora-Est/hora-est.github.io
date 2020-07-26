@@ -64,11 +64,13 @@ body {
 			padding: 0;
 			clear: both;
 			list-style-type: none;
+
 			li {
 				&.active {
 					a {
 						color: #C81919
 					}
+
 					font-weight: bold;
 				}
 
@@ -259,7 +261,7 @@ $button-size: 1.5rem;
 }
 
 // Displaying the menu when the user has clicked on the button
-.js .nav .active + ul {
+.js .nav .active+ul {
 	max-height: 30em;
 	overflow: hidden;
 	-webkit-transition: max-height 0.4s;
@@ -271,12 +273,7 @@ $button-size: 1.5rem;
 
 #main {
 	counter-reset: captions;
-
 	@include container;
-	@include clearfix;
-
-	clear: both;
-	margin-top: 1em;
 
 	article {
 		@include container;
@@ -350,7 +347,7 @@ $button-size: 1.5rem;
 			@include font-rem(14);
 		}
 
-		p + p {
+		p+p {
 			text-indent: 0;
 		}
 	}
@@ -546,9 +543,10 @@ $button-size: 1.5rem;
 }
 
 .article-wrap {
+
 	// Dotted line underlines for links
-	p > a,
-	li > a {
+	p>a,
+	li>a {
 		border-bottom: 1px dotted lighten($link-color, 50);
 
 		&:hover {
@@ -556,8 +554,8 @@ $button-size: 1.5rem;
 		}
 	}
 
-	p > a.reversefootnote,
-	li > a.reversefootnote {
+	p>a.reversefootnote,
+	li>a.reversefootnote {
 		border-bottom-width: 0;
 	}
 
@@ -713,8 +711,7 @@ $button-size: 1.5rem;
 	}
 
 	a.jp-disabled,
-	a.jp-disabled:hover {
-	}
+	a.jp-disabled:hover {}
 
 	a.jp-current,
 	a.jp-current:hover,
@@ -729,7 +726,7 @@ $button-size: 1.5rem;
 	}
 }
 
-.footer-wrap {
+footer {
 	@include container;
 	@include clearfix;
 
@@ -743,26 +740,25 @@ $button-size: 1.5rem;
 	h4,
 	h5,
 	h6,
-	span {
+	span,
+	td {
 		@include font-rem(12);
 	}
 
-	footer {
-		@include grid(12, 10);
-		@include prefix(12, 1);
-		@include suffix(12, 1);
+	@include grid(12, 10);
+	@include prefix(12, 1);
+	@include suffix(12, 1);
 
-		@media #{$small} {
-			@include grid(12, 6);
-			@include prefix(12, 3);
-			@include suffix(12, 3);
-		}
+	@media #{$small} {
+		@include grid(12, 6);
+		@include prefix(12, 3);
+		@include suffix(12, 3);
+	}
 
-		@media #{$x-large} {
-			@include grid(12, 4.5);
-			@include prefix(12, 4);
-			@include suffix(12, 3.5);
-		}
+	@media #{$x-large} {
+		@include grid(12, 4.5);
+		@include prefix(12, 4);
+		@include suffix(12, 3.5);
 	}
 }
 

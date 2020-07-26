@@ -1,25 +1,27 @@
 #main {
-    article.people{
-        width: 80%;
-        margin-left:10%;
-        
-        img {
-            max-width: 150px;
-            max-height: 150px;
-        }
-    }
+	article.people {
+		width: 80%;
+		margin-left: 10%;
+
+		img {
+			max-width: 150px;
+			max-height: 150px;
+		}
+	}
 }
 
 .mem-position {
-    font-size: 0.9em;
-    color: $link-color;
+	font-size: 0.9em;
+	color: $link-color;
 }
 
 ul.rig {
 	list-style: none;
 	font-size: 0px;
-	margin-left: -2.5%; /* should match li left margin */
+	margin-left: -2.5%;
+	/* should match li left margin */
 }
+
 ul.rig li {
 	display: inline-block;
 	padding: 1em;
@@ -34,45 +36,58 @@ ul.rig li {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
+
 ul.rig li img {
 	max-width: 100%;
 	height: auto;
 	margin: 0 0 10px;
 }
+
 ul.rig li h3 {
 	margin: 0 0 5px;
 }
+
 ul.rig li p {
 	font-size: .9em;
 	line-height: 1.5em;
 	color: #999;
 }
+
 /* class for 2 columns */
 ul.rig.columns-2 li {
-	width: 47.5%; /* this value + 2.5 should = 50% */
+	width: 47.5%;
+	/* this value + 2.5 should = 50% */
 }
+
 /* class for 3 columns */
 ul.rig.columns-3 li {
-	width: 30.83%; /* this value + 2.5 should = 33% */
+	width: 30.83%;
+	/* this value + 2.5 should = 33% */
 }
+
 /* class for 4 columns */
 ul.rig.columns-4 li {
-	width: 22.5%; /* this value + 2.5 should = 25% */
+	width: 22.5%;
+	/* this value + 2.5 should = 25% */
 }
- 
+
 @media (max-width: 480px) {
 	ul.grid-nav li {
 		display: block;
 		margin: 0 0 5px;
 	}
+
 	ul.grid-nav li a {
 		display: block;
 	}
+
 	ul.rig {
 		margin-left: 0;
 	}
+
 	ul.rig li {
-		width: 100% !important; /* over-ride all li styles */
+		width: 100% !important;
+		/* over-ride all li styles */
 		margin: 0 0 20px;
 	}
 }

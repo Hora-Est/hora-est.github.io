@@ -70,18 +70,18 @@
   <h4>Upcoming events<small class="pull-right">(<a href="{{ site.url }}/events/">View all events</a>)</small></h4>
     <ul>
     {% for post in site.posts %}
-    {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-    {% capture begindatetime %}{{post.begindatetime | date: '%s'}}{% endcapture %}
-    {% if begindatetime > nowunix %}
-      <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}&nbsp;&nbsp;{{ post.begindatetime | date_to_string }}</a></li>
-    {% endif %}
+      {% if post.layout == 'events' %}
+        {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+        {% capture begindatetime %}{{post.begindatetime | date: '%s'}}{% endcapture %}
+        {% if begindatetime > nowunix %}
+          <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}&nbsp;&nbsp;{{ post.begindatetime | date_to_string }}</a></li>
+        {% endif %}
+      {% endif %}
     {% endfor %}
     </ul>
     <hr />
   </div><!-- /.related-articles -->
-  <footer>
-    {% include _footer.html %}
-  </footer>
+ {% include _footer.html %}
 </div><!-- /.footer-wrap -->
 
 {% include _scripts.html %}	        

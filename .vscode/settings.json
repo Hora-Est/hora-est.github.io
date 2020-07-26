@@ -2,5 +2,11 @@
 	"files.associations": {
 		"*.md": "jekyll",
 		"*.html": "jekyll"
+	},
+	"files.exclude": {
+		"**/*.js.map": true,
+		"**/*.js": {
+			"when": "$(basename).ts"
+		}
 	}
 }

@@ -3,9 +3,12 @@
 ## Local hosting
 
 To test the website, execute
+
 ```powershell
 bundle exec jekyll serve
 ```
+
+For more information visit https://jekyllrb.com/
 
 ## GitHub Pages
 

@@ -20,7 +20,7 @@
 	</div>
 	<!-- Use CSS to set the width etc. of the gallery -->
 	<div id="index" role="main">
-		{% assign sortedyears = (site.data.Cloudinary | sort) %}
+		{% assign sortedyears = site.data.Cloudinary | sort %}
 		<!-- for year in sortedyears -->
 		{% for year in sortedyears %}
 			{% if year[0] != 'Other' %}

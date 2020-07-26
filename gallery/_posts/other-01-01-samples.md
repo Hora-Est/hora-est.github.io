@@ -2,9 +2,9 @@
 tags: []
 ---
 <div itemscope itemtype="http://schema.org/Photograph">
-  <h1>{{site.data.Cloudinary['2008']['gmm'].short_name}}</h1>
-  <h2 class="event-date">{{site.data.Cloudinary['2008']['gmm'].date}}</h2>
-  {% for url in site.data.Cloudinary['2008']['gmm'].urls %}
+  <h1>{{site.data.Cloudinary['Other']['01-01_samples'].short_name}}</h1>
+  <h2 class="event-date">{{site.data.Cloudinary['Other']['01-01_samples'].date}}</h2>
+  {% for url in site.data.Cloudinary['Other']['01-01_samples'].urls %}
     <a itemprop="image" class="swipebox" title="" href="{{ site.cloudinary.baseurl }}/{{ url }}">
       <img alt="" itemprop="thumbnailUrl" src="{{ site.cloudinary.baseurl }}/h_150/{{ url }}" />
       <meta itemprop="isFamilyFriendly" content="true" />

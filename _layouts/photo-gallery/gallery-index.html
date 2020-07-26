@@ -20,8 +20,8 @@
 	</div>
 	<!-- Use CSS to set the width etc. of the gallery -->
 	<div id="index" role="main">
-		<!-- % for year in site.data.Cloudinary % -->
-		{% for year in site.data.Cloudinary %}
+		<!-- % for year in site.data.Cloudinary | sort:"order" % -->
+		{% for year in site.data.Cloudinary | sort:"order" %}
 			{% if year[0] != 'Other' %}
 				<div class="year">
 					<h1>{{ year[0] }}</h1>
@@ -38,7 +38,7 @@
 				</div>
 			{% endif %}
 		{% endfor %}
-		<!-- % endfor year in site.data.Cloudinary % -->
+		<!-- % endfor year in site.data.Cloudinary | sort:"order" % -->
 	</div><!-- /#main -->
 	{% include _footer.html %}
 	{% include _scripts.html %}

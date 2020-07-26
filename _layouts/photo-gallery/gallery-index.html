@@ -20,6 +20,7 @@
 	</div>
 	<!-- Use CSS to set the width etc. of the gallery -->
 	<div id="index" role="main">
+		<!-- % for year in site.data.Cloudinary reversed % -->
 		{% for year in site.data.Cloudinary reversed %}
 			{% if year[0] != 'Other' %}
 				<div class="year">
@@ -37,6 +38,7 @@
 				</div>
 			{% endif %}
 		{% endfor %}
+		<!-- % endfor year in site.data.Cloudinary reversed % -->
 	</div><!-- /#main -->
 	{% include _footer.html %}
 	{% include _scripts.html %}

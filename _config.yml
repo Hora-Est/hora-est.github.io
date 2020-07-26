@@ -24,11 +24,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 cloudinary:
   baseurl: https://res.cloudinary.com/horaest/image/upload
-twitter_username:
-github_username: Hora-Est
-facebook_username: eindhovenhoraest
-repository: Hora-Est/hora-est.github.io
-github: [metadata]
 
 # Build settings
 markdown: kramdown
@@ -50,6 +45,7 @@ owner:
   bio: "Eindhoven PhD student association of Mechanical and Biomedical Engineering est. 1991"
   email: horaest@tue.nl
   youtube: UC9f4s5BomoZMS6JJ_WsF-rQ
+  facebook: eindhovenhoraest
   google:
     analytics:
     verify:

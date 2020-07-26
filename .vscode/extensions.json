@@ -1,0 +1,19 @@
+{
+	// See http://go.microsoft.com/fwlink/?LinkId=827846
+	// for the documentation about the extensions.json format
+	"recommendations": [
+			"waderyan.gitblame",
+			"dracula-theme.theme-dracula",
+			"coenraads.bracket-pair-colorizer-2",
+			"aaron-bond.better-comments",
+			"bcanzanella.openmatchingfiles",
+			"hookyqr.beautify",
+			"osteele.jekyll",
+			"ginfuru.ginfuru-vscode-jekyll-syntax",
+			"kalitaalexey.vscode-rust",
+			"syler.sass-indented",
+			"glen-84.sass-lint",
+			"sibiraj-s.vscode-scss-formatter",
+			"mrmlnc.vscode-scss"
+	]
+}
